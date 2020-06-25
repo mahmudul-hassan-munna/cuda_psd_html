@@ -1,0 +1,37 @@
+/*service setion start*/
+.service {
+	background-color: #17c2a4;
+}
+
+.service h1,h4 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	opacity: .8;
+}
+
+.service p {
+	color: white;
+	opacity: .8;
+}
+.banner-text-center{
+	width: 60%;
+    margin: auto;
+}
+
+.seperator {
+	width: 15%;
+	height: 5px;
+	background-color: #14a58c;
+	margin: 0px auto 15px;
+
+}
+
+/*service setion end*/   
+
+
+/*team setion start*/
+.team {
+	background-color: #e7f1f8;
+}
+/*team setion end*/
