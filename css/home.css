@@ -34,4 +34,34 @@
 .team {
 	background-color: #e7f1f8;
 }
+.team-image {
+	height: 200px;
+	width: 200px;
+}
+.team h1,h4 {
+	color: #27283d;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.team h6 {
+	color: #30bae7;
+}
+
+
+.social-icon {  
+  border-radius: 50%;
+  background : #bdd1df; 
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.social-icon i{
+	font-size: 20px;
+    line-height: 38px;
+	color: white;
+}
+
 /*team setion end*/
