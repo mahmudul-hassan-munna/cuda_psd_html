@@ -33,6 +33,10 @@
 /*team setion start*/
 .team {
 	background-color: #e7f1f8;
+	color: #27283d;
+}
+#team .seperator {
+	background-color: #dfe8ed;
 }
 .team-image {
 	height: 200px;
@@ -46,8 +50,6 @@
 .team h6 {
 	color: #30bae7;
 }
-
-
 .social-icon {  
   border-radius: 50%;
   background : #bdd1df; 
@@ -56,6 +58,7 @@
   text-align: center;
   display: inline-block;
   margin-right: 7px;
+  transition: .5s;
 }
 
 .social-icon i{
@@ -64,4 +67,86 @@
 	color: white;
 }
 
+.social-icon:hover {
+	background-color: grey;
+	transform: rotate(360deg);
+}
 /*team setion end*/
+
+
+/*skills setion start*/
+#skills {
+	background-color: #ffffff;
+	color: #3c4761;
+}
+#skills .seperator {
+	background-color: #dfe8ed;
+}
+
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; /* Circumference */
+  stroke-width: 7;
+}
+svg.radial-progress text {
+  font: 400 1em/1 'Oswald', sans-serif;
+  text-anchor: middle;
+}
+
+svg.web-design-svg circle {
+	stroke: #30bae7;
+}
+svg.html-css-svg circle {
+	stroke: #d74680;
+}
+svg.graphic-design-svg circle {
+	stroke: #15c7a8;
+}
+svg.ui-svg circle {
+	stroke: #eb7d4b;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+/*skills setion end*/
+
+
+/*about us setion start*/
+#about_us {
+	background-color: #d74680;
+	color: white;
+}
+#about_us .seperator {
+	background-color: #b73c6d;
+}
+.about-us-image {
+	height: 100px;
+	width: 100px;
+}
+.about-us-text {
+	font-size: 1.3rem;
+}
+
+#about_us h4 {
+	font-size: 1.5rem;
+	color: white;
+	margin-bottom: 0px;
+
+}
+#about_us h6 {
+	font-size: 1.1rem;
+	color: #ffdd99;
+	margin-top: 0px;
+	font-weight: 400;
+}
+
+/*about us setion end*/
