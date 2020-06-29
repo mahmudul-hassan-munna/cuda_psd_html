@@ -150,3 +150,31 @@ svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circ
 }
 
 /*about us setion end*/
+
+/*portfolio setion start*/
+#portfolio {
+	background-color: #ffdd99;
+	color: #393939;
+}
+#portfolio .seperator {
+	background-color: #e5c37f;
+}
+
+.portfolio-btn {
+	background-color: #ebc985;
+	border-radius: 5px;
+	padding: 5px 20px;
+	text-transform: uppercase;
+	margin: 0px 5px;
+}
+.load-more-btn{
+	background-color: #17c2a4;
+	border-bottom: 5px solid #14a58c; 
+}
+.is-checked {
+	background-color: white;
+}
+#portfolio h6 {
+	padding-top: 20px;
+}
+/*portfolio setion end*/

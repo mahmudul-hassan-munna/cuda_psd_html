@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/progress_bar.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/isotope_practice.css"> -->
 
     <title>Cuda</title>
   </head>
@@ -60,7 +60,7 @@
         <div class="row">
           <div class="text-center header-text">
             <p>Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</p>
-              <button type="button" class="btn work-with-us">Work With Us!</button>
+              <button type="button" class="btn cuda-btn">Work With Us!</button>
           </div>
         </div>
       </div>
@@ -229,6 +229,53 @@
     </section>
     <!-- skill section end -->
 
+    <!-- portfolio section start -->
+    <section id="portfolio">
+      <div class="container text-center">
+        <div class="banner-text-center">
+          <h1>OUR PORTFOLIO</h1>
+          <div class="seperator"></div>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p>
+        </div>
+        
+
+        <div class="row justify-content-center">
+          <div id="filters" class="button-group">  
+            <button class="btn portfolio-btn is-checked" data-filter="*">All</button>
+            <button type="button" class="btn portfolio-btn" data-filter=".web">Web</button>
+            <button class="btn portfolio-btn" data-filter=".app">Apps</button>
+            <button class="btn portfolio-btn" data-filter=".icon">Icon</button>
+          </div>
+        </div>
+
+        <div class="row grid">
+          <div class="col-md-6 mt-5 element-item web">
+            <img src="images/monitor.png" alt="Monitor">
+            <h6>Isometric Perspective Mock-Up</h6>
+          </div>
+          <div class="col-md-6 mt-5 element-item app icon">
+            <img src="images/monitor-2.png" alt="Monitor">
+            <h6>Time Zone App UI</h6>
+          </div>
+          <div class="col-md-6 mt-5 element-item web icon">
+            <img src="images/montor-3.png" alt="Monitor">
+            <h6>Isometric Perspective Mock-Up</h6>
+          </div>
+          <div class="col-md-6 mt-5 element-item web">
+            <img src="images/monitor-4.png" alt="Monitor">
+            <h6>Time Zone App UI</h6>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <button type="button" class="btn cuda-btn load-more-btn">LOAD MORE PROJECTS</button>
+        </div>
+
+
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
     <!-- about us section start -->
     <section id="about_us">
       <div class="container text-center">
@@ -291,8 +338,6 @@
 
 
 
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -301,54 +346,10 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 
-    <script>
-$(function(){
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-    // Remove svg.radial-progress .complete inline styling
-    $('svg.radial-progress').each(function( index, value ) { 
-        $(this).find($('circle.complete')).removeAttr( 'style' );
-    });
-
-    // Activate progress animation on scroll
-    $(window).scroll(function(){
-        $('svg.radial-progress').each(function( index, value ) { 
-            // If svg.radial-progress is approximately 25% vertically into the window when scrolling from the top or the bottom
-            if ( 
-                $(window).scrollTop() > $(this).offset().top - ($(window).height() * 0.75) &&
-                $(window).scrollTop() < $(this).offset().top + $(this).height() - ($(window).height() * 0.25)
-            ) {
-                // Get percentage of progress
-                percent = $(value).data('percentage');
-                // Get radius of the svg's circle.complete
-                radius = $(this).find($('circle.complete')).attr('r');
-                // Get circumference (2πr)
-                circumference = 2 * Math.PI * radius;
-                // Get stroke-dashoffset value based on the percentage of the circumference
-                strokeDashOffset = circumference - ((percent * circumference) / 100);
-                // Transition progress for 1.25 seconds
-                $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 1250);
-            }
-        });
-    }).trigger('scroll');
-
-});
-</script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-
+    <script src="js/skill.js"></script>
+    <script src="js/prortfolio.js"></script>
 
   </body>
 </html>
