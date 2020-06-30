@@ -178,3 +178,71 @@ svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circ
 	padding-top: 20px;
 }
 /*portfolio setion end*/
+
+
+/*contact us start*/
+#contact-us {
+	background-color: #3c5499;
+	color: white;
+}
+#contact-us .seperator {
+	background-color: #273a71;
+}
+
+.holder {
+	position: absolute;
+	margin: 7px 0px 7px 14px;
+	cursor: auto;
+	z-index: 1;
+	opacity: .7;
+}
+
+.red{
+    color: red;
+}
+
+input {
+    padding:8px;
+}
+
+.contact-us-input {
+	width: 100%;
+	background-color: #273a71;
+	border: none;
+	border-radius: 3px;
+	color: white !important;
+}
+
+.contact-us-input:focus {
+  background-color: #273a71;
+}
+
+.send-message-btn{
+	background-color: #30bae7;
+	border-bottom: 5px solid #299ec5; 
+}
+/*contact us end*/
+
+
+/*footer start*/
+footer {
+	background-color: #344b8e;
+	color: white;
+}
+.footer-ul {
+	list-style-type: none;
+	
+}
+.footer-ul li {
+	display: inline-block;
+	padding: 20px;
+}
+.footer-ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+}
+.footer-ul li a:hover{
+	color: #30bae7;
+}
+/*footer end*/
